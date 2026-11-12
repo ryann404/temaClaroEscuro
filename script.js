@@ -1,6 +1,6 @@
 const botao = document.getElementById('tema');
 
-let icone = document.querySelector('i');
+const icone = botao.querySelector('i');
 
 const salvaTema = localStorage.getItem('theme');
 
@@ -20,7 +20,7 @@ botao.addEventListener('click', () => {
         localStorage.setItem('theme', 'dark');
     } else{
         icone.classList.replace('fa-sun', 'fa-moon');
-        localStorage.setItem('theme', light)
+        localStorage.setItem('theme', 'light;')
     }
 })
 
